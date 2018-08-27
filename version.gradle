@@ -1,0 +1,16 @@
+def version = [:]
+
+version.buildToolViewsion = localGradlePluginVersion
+version.compileSdkVersion = 27
+version.minSdkVersion = 15
+version.targetSdkVersion = 27
+version.versionCode = 1
+version.versionName = "1.0"
+
+def support = [:]
+
+version.junitVersion = "4.12"
+version.supportLibriaryVersion = "27.1.1"
+version.supportConstraintVersion = "1.1.2"
+
+ext.build_version = version
