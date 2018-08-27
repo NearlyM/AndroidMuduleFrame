@@ -1,3 +1,4 @@
+
 def version = [:]
 
 version.buildToolViewsion = localGradlePluginVersion
@@ -7,10 +8,29 @@ version.targetSdkVersion = 27
 version.versionCode = 1
 version.versionName = "1.0"
 
+ext.build_version = version
+
+
 def support = [:]
 
-version.junitVersion = "4.12"
-version.supportLibriaryVersion = "27.1.1"
-version.supportConstraintVersion = "1.1.2"
+support.supportLibriaryVersion = "27.1.1"
+support.supportConstraintVersion = "1.1.2"
 
-ext.build_version = version
+ext.support_version = support
+
+def test = [:]
+
+test.runnerVersion = "1.0.2"
+test.espressoVersion = "3.0.2"
+test.junitVersion = "4.12"
+
+ext.test_version = test
+
+//def addRepos(RepositoryHandler handler) {
+//    handler.google()
+//    handler.jcenter()
+//    handler.mavenCentral()
+//    handler.maven { url "https://jitpack.io" }
+//    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+//    ext.addRepos = this.&addRepos
+//}
