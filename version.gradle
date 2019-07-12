@@ -26,11 +26,12 @@ test.junitVersion = "4.12"
 
 ext.test_version = test
 
-//def addRepos(RepositoryHandler handler) {
-//    handler.google()
-//    handler.jcenter()
-//    handler.mavenCentral()
-//    handler.maven { url "https://jitpack.io" }
-//    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-//    ext.addRepos = this.&addRepos
-//}
+def static addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.mavenCentral()
+    handler.maven { url "https://jitpack.io" }
+    handler.maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+}
+
+ext.addRepos = this.&addRepos

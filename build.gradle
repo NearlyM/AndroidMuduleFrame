@@ -2,10 +2,11 @@
 
 buildscript {
     apply from: 'version.gradle'
-    repositories {
-        google()
-        jcenter()
-    }
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+    addRepos(repositories)
     dependencies {
         classpath "com.android.tools.build:gradle:$localGradlePluginVersion"
 
